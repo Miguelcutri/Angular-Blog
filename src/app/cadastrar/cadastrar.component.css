@@ -1,0 +1,20 @@
+#img-bg img{
+    background-image: url(../../assets/image/bg.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#caixa{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.795);
+    box-shadow: 10px 10px 10px;
+    height: 550px;
+    width: 50%;
+    border-radius: 10px;
+    margin: 50px;
+    margin-left: 45%;
+
+}
