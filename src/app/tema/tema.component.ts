@@ -23,9 +23,10 @@ export class TemaComponent implements OnInit {
     if(environment.token == ''){
       alert("Sua sessão expirou, faça o login novamente.")
       this.router.navigate(["/entrar"])
-
-      this.findAllTemas()
     }
+      this.findAllTemas()
+      
+    
   }
 
 findAllTemas(){
@@ -38,7 +39,7 @@ findAllTemas(){
     this.temaService.postTema(this.tema).subscribe((resp: Tema)=> {
       this.tema = resp
       alert("Tema cadastrado com sucesso!")
-      this.findAllTemas()
+     
       this.tema = new Tema()
     })
   }
